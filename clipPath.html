@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        clip-path: url(#myClip);
+        -webkit-background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="myClip">
+          <!-- <polygon points="0,150 150,0 500,0 500,500 50,500, 50,100" /> -->
+          <circle cy="150" cx="50" r="50" />
+          <circle cy="250" cx="50" r="50" />
+        </clipPath>
+      </defs>
+    </svg>
+    <img src="./images/giphy.gif" alt="" />
+  </body>
+</html>
